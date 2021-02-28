@@ -604,6 +604,26 @@ url = "https://mirrors.aliyun.com/pypi/simple"
 reference = "aliyun"
 
 [[package]]
+name = "pydantic-sqlalchemy"
+version = "0.0.8.post1"
+description = "Tools to convert SQLAlchemy models to Pydantic models"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[package.dependencies]
+pydantic = ">=1.5.1,<2.0.0"
+sqlalchemy = ">=1.3.16,<2.0.0"
+
+[package.extras]
+dev = ["autoflake[dev] (>=1.3.1,<2.0.0)", "flake8[dev] (>=3.7.9,<4.0.0)", "jupyter[dev] (>=1.0.0,<2.0.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
 name = "pyflakes"
 version = "2.2.0"
 description = "passive checker of Python programs"
@@ -1108,7 +1128,7 @@ reference = "aliyun"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "fba2483da3f8d3d7a2d3e2ff69e190a858de97e797872cca37cdf95a621de023"
+content-hash = "449ac653b128f46ae70ee4a832e95d43284fda6843279f68c7504275a31fb01e"
 
 [metadata.files]
 alembic = [
@@ -1398,6 +1418,10 @@ pydantic = [
     {file = "pydantic-1.8-cp39-cp39-win_amd64.whl", hash = "sha256:77e04800d19acc2a8fbb95fe3d47ff397ce137aa5a2b32cc23a87bac70dda343"},
     {file = "pydantic-1.8-py3-none-any.whl", hash = "sha256:42b8fb1e4e4783c4aa31df44b64714f96aa4deeacbacf3713a8a238ee7df3b2b"},
     {file = "pydantic-1.8.tar.gz", hash = "sha256:0b71ca069c16470cb00be0acaf0657eb74cbc4ff5f11b42e79647f170956cda3"},
+]
+pydantic-sqlalchemy = [
+    {file = "pydantic-sqlalchemy-0.0.8.post1.tar.gz", hash = "sha256:bc2de9e18406e6f4a5aa8d600bd35ff062fd3ee2bb167c6be53e899bcdff6790"},
+    {file = "pydantic_sqlalchemy-0.0.8.post1-py3-none-any.whl", hash = "sha256:d79ad9adda923d4427c0900575d9825f702316cb1bd079dc58fa5939d3356349"},
 ]
 pyflakes = [
     {file = "pyflakes-2.2.0-py2.py3-none-any.whl", hash = "sha256:0d94e0e05a19e57a99444b6ddcf9a6eb2e5c68d3ca1e98e90707af8152c90a92"},

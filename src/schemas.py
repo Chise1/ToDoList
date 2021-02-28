@@ -7,6 +7,8 @@
 @Software: PyCharm
 @info    :
 """
+from typing import List
+
 from pydantic import BaseModel
 
 
@@ -17,3 +19,10 @@ class LoginInfo(BaseModel):
 
 class CrateTaskSchema(BaseModel):
     content: str
+
+
+ListTaskSchema=pydantic_
+
+class ResultListTaskSchema(BaseModel):
+    data: List[ListTaskSchema]
+    more: bool

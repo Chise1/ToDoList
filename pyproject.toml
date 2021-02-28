@@ -12,6 +12,7 @@ python-dotenv = "^0.15.0"
 uvicorn = "^0.13.4"
 python-jose = "^3.2.0"
 python-multipart = "^0.0.5"
+pydantic-sqlalchemy = "^0.0.8"
 
 [tool.poetry.dev-dependencies]
 flake8 = "*"

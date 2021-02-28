@@ -8,7 +8,7 @@
 @info    :
 """
 
-from sqlalchemy import Boolean, Column, Integer, String, DateTime
+from sqlalchemy import Boolean, Column, Integer, String, DateTime, ForeignKey
 
 from src.db import Base
 from src.utils.password import make_password, verify_password
@@ -45,6 +45,7 @@ class User(Base):
 
 class Task(Base):
     __tablename__ = 'task'
+    user_id = Column(ForeignKey('user.id'))
     id = Column(Integer, primary_key=True)
     checked = Column(Boolean(), default=False)
     created_time = Column(DateTime, default=datetime.now)
